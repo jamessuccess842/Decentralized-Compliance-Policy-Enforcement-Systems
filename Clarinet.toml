@@ -1,0 +1,24 @@
+[project]
+name = 'Decentralized-Compliance-Policy-Enforcement-Systems'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.policy-enforcer-verification]
+path = 'contracts/policy-enforcer-verification.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.policy-implementation]
+path = 'contracts/policy-implementation.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
